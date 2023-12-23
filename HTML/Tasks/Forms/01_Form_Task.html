@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task - 1</title>
+</head>
+
+<body>
+    <h2 align="center">Student Registration Form</h2>
+    <hr style="color: aliceblue;">
+    <table align="center">
+        <form style="background-color: lightblue;">
+            <tr>
+                <td>
+                    <br>
+                    <label for="firstname">First Name :</label>
+                    <br>
+                    <input type="text" size="100%" placeholder="Enter First Name" pattern="[a-zA-Z]{1,30}" minlength="3"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="middlename">Middle Name :</label>
+                    <br>
+                    <input type="text" size="100%" placeholder="Enter Middle Name" pattern="[a-zA-Z]{1,30}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="lastname">Last Name :</label>
+                    <br>
+                    <input type="text" size="100%" placeholder="Enter Last Name" pattern="[a-zA-Z]{1,30}" minlength="3"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="course">Course :</label>
+                    <select name="course">
+                        <option value="" Selected disabled>Select Course :</option>
+                        <option value="">Course 1</option>
+                        <option value="">Course 2</option>
+                        <option value="">Course 3</option>
+                        <option value="">Course 4</option>
+                        <option value="">Course 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="gender">Gender :</label>
+                    <br>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="phone">Phone :</label>
+                    <br>
+                    <input type="text" size="1%" value="+91">
+                    <input type="tel" size="93%" pattern="{10}" maxlength="10" placeholder="Enter Phone Number"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="address">Current Address :</label>
+                    <br>
+                    <textarea cols="93" rows="10" placeholder="Present Address" pattern="[a-zA-Z0-9]"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="email">Email :</label>
+                    <br>
+                    <input type="email" size="100%" pattern="[a-zA-Z0=9]+@+[a-z]{5}+[.]+[a-z]{2,4}"
+                        placeholder="Enter Email Address" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="password">Password :</label>
+                    <br>
+                    <input type="password" size="100%" pattern="[a-zA-Z0-9@._]{6,10}" placeholder="Enter Password"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="password1">Re-Type Password :</label>
+                    <br>
+                    <input type="password" size="100%" pattern="[a-zA-Z0-9@._]{6,10}" placeholder="Enter Password"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <input type="Submit" value="Register">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

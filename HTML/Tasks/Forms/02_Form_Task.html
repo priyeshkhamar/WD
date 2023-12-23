@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task - 2</title>
+</head>
+
+<body>
+    <card>
+        <table align="center" style="background-color: aliceblue;">
+            <form>
+                <tr>
+                    <td>
+                        <h2>
+                            Registration
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fullname"><b>Full Name</b></label>
+                        <br>
+                        <input type="text" pattern="[a-zA-Z]{3,30}" minlength="3" placeholder="Enter your Name" required>
+                    </td>
+                    <td>
+                        <label for="username"><b>Username</b></label>
+                        <br>
+                        <input type="text" pattern="[a-zA-Z0-9]" placeholder="Enter your UserName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="email"><b>E-Mail</b></label>
+                        <br>
+                        <input type="email" size="100%" pattern="[a-zA-Z0=9]+@+[a-z]{5}+[.]+[a-z]{2,4}"
+                            placeholder="Enter Email Address" required autocomplete="off">
+                    </td>
+                    <td>
+                        <br>
+                        <label for="phone"><b>Phone Number</b></label>
+                        <br>
+                        <input type="tel" pattern="{10}" maxlength="10" placeholder="Enter your Phone Number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="password"><b>Password</b></label>
+                        <br>
+                        <input type="password" pattern="[a-zA-Z0-9@._]" minlength="5" placeholder="Enter your Password"
+                            required>
+                    </td>
+                    <td>
+                        <br>
+                        <label for="confirmpassword"><b>Confirm Password</b></label>
+                        <br>
+                        <input type="password" pattern="[a-zA-Z0-9@._]" minlength="5"
+                            placeholder="Confirm your Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="radio" value="male" name="gender">Male
+                        <input type="radio" value="female" name="gender">Female
+                        <input type="radio" value="other" name="gender">Prefer Not to Say
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="submit" value="Register" size="100%">
+                        <!-- <button>Register</button> -->
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </card>
+</body>
+
+</html>
