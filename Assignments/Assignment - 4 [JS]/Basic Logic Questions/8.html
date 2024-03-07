@@ -1,0 +1,32 @@
+<!-- Write a JavaScript Program to find the area of a triangle? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+</head>
+
+<body>
+    <label for="base">Enter the Base of the Triangle : </label>
+    <input type="number" id="base">
+    <label for="height">Enter the Height of the Triangle : </label>
+    <input type="number" id="height">
+    <p id="output"></p>
+    <button onclick="calculateArea()">Calculate</button>
+
+    <script>
+        function calculateArea() {
+            var x = parseFloat(document.getElementById("base").value);
+            var y = parseFloat(document.getElementById("height").value);
+
+            var area = 0.5 * x * y;
+
+            document.getElementById("output").innerText = "Area: " + area + " cm^2";
+        }
+    </script>
+</body>
+
+</html>

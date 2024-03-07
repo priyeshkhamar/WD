@@ -1,0 +1,34 @@
+Q-3. Define a Data Types in JS?
+Ans.
+
+In programming, data type is an important concept.
+To be able to operate on variables, we need to know what type of data it is. 
+
+There is main 2 types of Data types: 
+(i)	Primitive
+(ii)	Non-Primitive
+
+(i)	Primitive data types
+There are further 7 types of primitive data types:
+1.	Number – include all the numbers, integers.
+2.	String - A string (or a text string) is a series of characters.
+3.	Boolean - Booleans can only have two values: true or false.
+
+4.	BigInt - All JavaScript numbers are stored in a 64-bit floating-point format.
+JavaScript BigInt is a data type that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+
+5.	Undefined - In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+
+6.	Null
+
+7.	Symbols – Special characters are stored as symbols.
+(ii)	Non-Primitive data types
+1.	Array – 
+Arrays are multiple values stored in a single variable.
+JavaScript arrays are written with square brackets.
+Array items are separated by commas.
+a [car, bike, scooter]
+
+2.	Objects 
+JavaScript objects are written with curly braces {}.
+Object properties are written as name: value pairs, separated by commas.

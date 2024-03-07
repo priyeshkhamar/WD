@@ -1,0 +1,73 @@
+Q - 18. What is a Loop and Switch Case in JavaScript define that ?
+Ans.
+
+>>Loops 
+The JavaScript loops are used to iterate a piece of code using for, while, do while or for-in loops.
+It makes the code compact.
+It is mostly used in array.
+
+There are four types of loops in JavaScript.
+
+1. for loop
+2. while loop
+3. do-while loop
+4. for-in loop
+
+1. For Loop
+--> The for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known. 
+
+Syntax :
+
+for (initialization; condition; increment)  
+{  
+    code to be executed  
+}  
+
+
+2. While Loop
+--> The while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known.
+
+Syntax :
+
+while (condition)  
+{  
+    code to be executed  
+    increment
+} 
+
+
+3. Do-while Loop
+--> The do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false.
+
+Syntax :
+
+do{  
+    code to be executed  
+}while (condition);  
+
+4. For in Loop
+--> The JavaScript for in loop is used to iterate the properties of an object. 
+
+
+
+
+>>Switch Case 
+As the number of conditions increases, you can use multiple else-if statements. But when we have to deal with
+many conditions, the switch statement is used.
+
+Syntax:
+
+switch (expression) {
+case value1:
+statement1;
+break;
+case value2:
+statement2;
+break;
+. . .
+case valueN:
+statementN;
+break;
+default:
+statementDefault;
+};

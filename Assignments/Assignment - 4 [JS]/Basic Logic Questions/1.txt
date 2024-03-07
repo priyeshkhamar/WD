@@ -1,0 +1,11 @@
+Q - 1. What is JavaScript. How to use it?
+Ans.
+
+JavaScript is a client-side scripting language which defines the behaviour of a webpage.
+
+There are two ways to use JavaScript in a webpage:
+(i)	Internal
+--> We can write the JS code within the <script> tag inside the <head> or the <body> part.
+
+(ii)	External
+--> We can integrate an external JS file using <script src = “script.js”>.

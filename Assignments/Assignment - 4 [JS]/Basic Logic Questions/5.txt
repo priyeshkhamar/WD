@@ -1,0 +1,19 @@
+Q - 5. What the deference between undefined and undeclare in JavaScript?
+Ans.
+
+1. Undefine 
+--> A variable is said to be "undefined" when it has been declared but has not been assigned a value.
+
+Example : 
+let x; // Declaration without assignment, x is undefined
+console.log(x); // Output: undefined
+
+2. Undeclared 
+--> A variable is "undeclared" when it is used without being previously declared using var, let, or const.
+
+Example :
+console.log(y); // Error: y is not defined (undeclared)
+
+To summarize,
+"Undefined" refers to a variable that has been declared but not assigned a value.
+"Undeclared" refers to a variable that has been used without being declared.

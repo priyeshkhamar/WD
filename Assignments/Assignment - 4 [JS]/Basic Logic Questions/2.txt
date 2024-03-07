@@ -1,0 +1,15 @@
+Q-2. How many types of Variables in JavaScript? 
+Ans.
+
+There are 3 types of variables in JavaScript: 
+(i)	Var
+	In this type, a variable can be defined as: var a = 10, where a is the variable_name and the value assigned to it is 10.
+Var type supports Declaration, Re-Declaration as well as Re-assignment of variable.
+
+(ii)	Let
+	In this type, a variable can be defined as: let a = 10, where a is the name of variable and 10 is the assigned value.
+Let supports Declaration and Re-Assignment but does not support Re-Declaration.
+(iii)	Constant
+	In this type, a variable can be defined as: const a = 10, where a is the variable name and 10 is the assigned value.
+Const is unique and does not support Re-declaration or Re-assignment.
+The value is constant throughout.

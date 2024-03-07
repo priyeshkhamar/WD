@@ -1,0 +1,69 @@
+<!-- Q - 9.  What is Condition Statement? -->
+Ans :
+JavaScript Conditional statements allow you to execute specific code based on conditions. 
+If the condition meets then a particular block of code will be executed otherwise it will execute another block of code that
+satisfies that particular condition.
+
+Types of Conditional statements :
+
+1. If statement
+--> The if statement is used to evaluate a particular condition. If the condition holds true, the associated code block is
+executed.
+
+Syntax:
+
+if ( condition ) {
+// If the condition is met,
+//code will get executed.
+}
+
+2. if-else Statement
+--> The if-else statement will perform some code for a specific condition. 
+The else statement is written after the if statement and it has no condition in their code block.
+
+Syntax:
+
+if (condition1) {
+// Executes when condition1 is true
+if (condition2) {
+// Executes when condition2 is true
+}
+}
+
+3. else if Statement
+--> The else if statement in JavaScript allows handling multiple possible conditions and outputs, evaluating more than two
+conditions based on whether the conditions are true or false.
+
+Syntax:
+
+if (1st condition) {
+// Code for 1st condition
+} else if (2nd condition) {
+// ode for 2nd condition
+} else if (3rd condition) {
+// Code for 3rd condition
+} else {
+// code that will execute if all
+// above conditions are false
+}
+
+4. Using Switch Statement (JavaScript Switch Case)
+--> As the number of conditions increases, you can use multiple else-if statements. But when we have to deal with
+many conditions, the switch statement is used.
+
+Syntax:
+
+switch (expression) {
+case value1:
+statement1;
+break;
+case value2:
+statement2;
+break;
+. . .
+case valueN:
+statementN;
+break;
+default:
+statementDefault;
+};

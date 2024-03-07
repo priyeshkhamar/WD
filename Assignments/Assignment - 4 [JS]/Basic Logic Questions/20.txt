@@ -1,0 +1,23 @@
+Q -20. What is the difference between && and || in JavaScript?
+Ans.
+
+1. Logical AND (&&):
+
+Syntax: expression1 && expression2
+
+The && operator returns true if both expression1 and expression2 are true. If either one of them is false, the result is false.
+
+Example :
+
+var result = (5 > 3 && 2 < 4); // Result is true because both conditions are true
+
+
+2. Logical OR (||):
+
+Syntax : expression1 || expression2
+
+The || operator returns true if at least one of expression1 or expression2 is true. If both are false, the result is false.
+
+Example : 
+
+var result = (5 > 3 || 2 > 4); // Result is true because at least one condition is true

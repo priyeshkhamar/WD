@@ -1,0 +1,32 @@
+<!-- Write to print factorial of given number? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <label for="num">Enter a number to find its Factorial : </label>
+    <input type="number" name="" id="num">
+    <h2 id="result"></h2>
+    <button onclick="Factorial()">Factorial</button>
+
+    <script>
+        function Factorial() {
+            var factorial = 1, i;
+            var x = document.getElementById("num").value;
+
+            for (i = 1; i <= x; i++) {
+                factorial = factorial * i;
+            }
+
+            document.getElementById("result").innerHTML = "Factorial of " + x + " = " + factorial;
+        }
+    </script>
+</body>
+
+</html>

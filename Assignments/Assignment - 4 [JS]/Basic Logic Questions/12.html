@@ -1,0 +1,34 @@
+<!-- WAP to convert years into days and days into years? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Years and Days</title>
+</head>
+
+<body>
+    <label for="years">Enter the number of years : </label>
+    <input type="number" id="years">
+    <label for="days">Enter the number of days : </label>
+    <input type="number" id="days">
+    <p id="output"></p>
+    <button onclick="convertYearsAndDays()">Convert</button>
+
+    <script>
+        function convertYearsAndDays() {
+            var y = parseFloat(document.getElementById("years").value);
+            var d = parseFloat(document.getElementById("days").value);
+
+            var years = d / 365;
+            var days = y * 365;
+
+            document.getElementById("output").innerHTML = d + " Days = " + years + " years" + " and " + y + " Years = " + days + " days";
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!-- Write to print Fibonacci series up to given numbers? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <label for="terms">Enter the number of terms for Fibonacci Series:</label>
+    <input type="number" name="" id="terms">
+    <h2 id="result"></h2>
+    <button onclick="Fibonacci()">Get Fibonacci</button>
+
+    <script>
+        function Fibonacci() {
+            var first = 0, second = 1, next, i;
+            var n = document.getElementById("terms").value;
+            var resultString = "Fibonacci Series: ";
+
+            for (i = 0; i < n; i++) {
+                resultString = resultString + first + " ";
+                next = first + second;
+                first = second;
+                second = next;
+            }
+
+            document.getElementById("result").innerHTML = resultString;
+        }
+    </script>
+</body>
+
+</html>

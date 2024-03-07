@@ -1,0 +1,6 @@
+Q - 19. What is the use of is isNan function?
+Ans. 
+
+NaN is short form for "Not-a-Number".
+NaN is a number that is not a legal number.
+The Number.isNaN() method returns true if the value is NaN, and the type is a Number.
