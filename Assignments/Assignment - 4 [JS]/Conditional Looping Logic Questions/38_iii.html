@@ -1,0 +1,33 @@
+<!-- Use pattern in console.log in JS?
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+
+<body>
+    <script>
+        var num = 1;
+
+        for (var i = 1; i <= 5; i++) {
+
+            var row = "";
+
+            for (var j = 0; j < i; j++) {
+                row = row + num + " ";
+                num++;
+            }
+            console.log(row);
+        }
+    </script>
+</body>
+
+</html>

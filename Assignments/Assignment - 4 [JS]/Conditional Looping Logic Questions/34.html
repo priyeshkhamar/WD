@@ -1,0 +1,38 @@
+<!-- Write to print number in reverse order e.g.: number = 64728  reverse =82746 in JS? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+
+<body>
+    <label for="num">Enter a Number to Reverse it : </label>
+    <input type="number" name="" id="num">
+    <h2 id="result"></h2>
+    <button onclick="Reverse()">Reverse</button>
+
+    <script>
+        function Reverse() {
+            var i, digit, reverse = 0;
+            var x = parseInt(document.getElementById("num").value);
+
+            if (x < 1) {
+                document.getElementById("result").innerHTML = "Invalid Entry!";
+            }
+            else {
+                while (x != 0) {
+                    digit = x % 10;
+                    reverse = reverse * 10 + digit;
+                    x = parseInt(x / 10);
+                }
+                document.getElementById("result").innerHTML = "Reversed Number = " + reverse;
+            }
+        }
+    </script>
+</body>
+
+</html>
