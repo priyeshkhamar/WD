@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if Variable is an Array</title>
+</head>
+
+<body>
+    <label for="input">Enter to check whether Array or not : </label>
+    <input type="text" name="" id="inputString">
+    <p id="result"></p>
+    <button onclick="check()">Check</button>
+    <script>
+        // function isArray(variable) {
+        //     return Array.isArray(variable);
+        // }
+
+        function check() {
+            var text = document.getElementById("inputString").value;
+            if (Array.isArray(text)) {
+                document.getElementById("result").innerHTML = "It is an Array!";
+            } else {
+                document.getElementById("result").innerHTML = "It is not an Array!";
+            }
+        }
+    </script>
+</body>
+
+</html>

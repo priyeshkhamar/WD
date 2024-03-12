@@ -1,0 +1,3 @@
+Q - 47. What is the drawback of declaring methods directly in JavaScript objects?
+Ans.
+

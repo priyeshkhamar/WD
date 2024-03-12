@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize First Letter of a String</title>
+</head>
+
+<body>
+    <label for="input">Enter the String : </label>
+    <input type="text" name="" id="inputString">
+    <button onclick="capitalizeText()">Capitalize</button>
+    <p id="result"></p>
+    <script>
+        function capitalizeText() {
+            var text = document.getElementById("inputString").value;
+
+            if (text.length > 0) {
+                var capitalizedText = text[0].toUpperCase() + text.substring(1);
+                document.getElementById("result").innerHTML = capitalizedText;
+            } else {
+                alert("Please enter a string before capitalizing.");
+            }
+        }
+    </script>
+</body>
+
+</html>
