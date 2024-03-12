@@ -1,0 +1,47 @@
+<!-- Write a JavaScript program to compare two objects? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Objects</title>
+</head>
+
+<body>
+
+    <!-- We cannot just implement "==" or "===" operator to compare two objects. The better way to do the comparison is to use
+    JSON.Stringify and compare the objects. -->
+    <script>
+        const obj1 = {
+            name: "ABCD",
+            id: "123",
+            mobile: "9999999999"
+        };
+
+        const obj2 = {
+            namne: "EFGH",
+            id: "159",
+            mobile: "4561478521"
+        };
+
+        const obj3 = {
+            name: "ABCD",
+            id: "123",
+            mobile: "9999999999"
+        };
+
+        if (JSON.stringify(obj1) === JSON.stringify(obj3)) {
+            document.write("Objects are Equal!");
+        }
+        // else if (obj1 === obj3) {
+        //     document.write("Object 1 and Object 3 are equal!");
+        // }
+        else {
+            document.write("Objects are not Equal!");
+        }
+    </script>
+</body>
+
+</html>
