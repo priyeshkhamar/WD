@@ -1,0 +1,37 @@
+<!-- Pattern :
+
+A
+B C
+D E F
+G H I J
+K L M N O -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern</title>
+  </head>
+  <body>
+    <script>
+      function printPattern(rows) {
+        // ASCII code for 'A'
+        const charCodeA = 65;
+
+        for (let i = 0; i < rows; i++) {
+          let row = "";
+
+          for (let j = 0; j <= i; j++) {
+            const currentChar = String.fromCharCode(charCodeA + j); //ascii to character
+            row += currentChar + " ";
+          }
+
+          document.write(row);
+        }
+      }
+
+      printPattern(5);
+    </script>
+  </body>
+</html>

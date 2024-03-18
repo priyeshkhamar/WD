@@ -1,0 +1,9 @@
+Q - 21. What is the use of Void (0)?
+Ans.
+
+The void(0) expression is often used in JavaScript to prevent the browser from navigating to a new page when clicking on a link or button. It essentially creates a "no-operation" expression that evaluates to undefined, while ensuring that the browser's current page remains unchanged.
+
+Example :
+<a href="javascript:void(0)">Click Me</a>
+
+In this example, clicking the "Click Me" link won't cause the browser to navigate anywhere because void(0) returns undefined.

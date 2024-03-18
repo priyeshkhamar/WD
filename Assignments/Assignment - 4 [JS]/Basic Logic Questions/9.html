@@ -1,0 +1,35 @@
+<!-- Days left until Christmas  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days Until Next Christmas</title>
+  </head>
+  <body>
+    <script>
+      function daysUntilChristmas() {
+        var today = new Date();
+
+        var currentYear = today.getFullYear();
+
+        var christmas = new Date(currentYear, 11, 25);
+
+        if (today.getTime() > christmas.getTime()) {
+          christmas.setFullYear(currentYear + 1);
+        }
+
+        var difference = christmas.getTime() - today.getTime();
+
+        var daysLeft = parseInt(difference / (1000 * 3600 * 24) + 1);
+
+        return daysLeft;
+      }
+
+      var daysUntilNextChristmas = daysUntilChristmas();
+
+      document.write("Days until next Christmas: " + daysUntilNextChristmas);
+    </script>
+  </body>
+</html>
