@@ -1,0 +1,12 @@
+Q - 59. What is Bom vs Dom in JS?
+Ans.
+
+1. BOM -  BOM stands for Browser Object Model.
+BOM are objects that deal with everything outside the page (the browser window and the desktop screen).
+
+BOM allows interaction with browser-specific objects like window, navigator, location, history, and screen.
+
+2. DOM -  DOM stands for Document Object Model.
+DOM are objects that have to do with the currently loaded page (the page is also called the document).
+
+DOM includes objects like document, Element, Node, HTMLElement, etc., which represent elements, text nodes, attributes, and other parts of the document

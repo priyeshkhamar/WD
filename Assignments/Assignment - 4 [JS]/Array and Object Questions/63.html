@@ -1,0 +1,26 @@
+<!-- Change all the string characters to lowercase letters using toLowerCase() Method. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lowercase Converter</title>
+  </head>
+  <body>
+    <label for="input">Enter a Sentence : </label>
+    <input type="text" name="" id="inputString" />
+    <h4 id="result"></h4>
+    <button onclick="convertToLowerCase()">Convert to Lowercase</button>
+    <script>
+      function convertToLowerCase() {
+        var sentence = document.getElementById("inputString").value;
+
+        var lowercaseSentence = sentence.toLowerCase();
+
+        document.getElementById("result").innerHTML =
+          "Lowercase String: " + lowercaseSentence;
+      }
+    </script>
+  </body>
+</html>

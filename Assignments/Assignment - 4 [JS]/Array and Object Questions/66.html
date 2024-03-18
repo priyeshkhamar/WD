@@ -1,0 +1,40 @@
+<!-- Find the length of a string without using libraryFunction? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Length Calculator</title>
+</head>
+
+<body>
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString" required />
+    <button onclick="calculateStringLength()">Calculate Length</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function calculateStringLength() {
+            var sentence = document.getElementById("inputString").value;
+
+            const length = findStringLength(sentence);
+
+            document.getElementById(
+                "result"
+            ).innerHTML = "Length of the string: " + length;
+        }
+
+        function findStringLength(str) {
+            let length = 0;
+            for (let char of str) {
+                length++;
+            }
+            return length;
+        }
+    </script>
+</body>
+
+</html>

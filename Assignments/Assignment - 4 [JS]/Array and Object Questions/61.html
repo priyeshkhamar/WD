@@ -1,0 +1,27 @@
+<!-- Split the string into an array using split() Method? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Split</title>
+  </head>
+  <body>
+    <label for="sentence">Enter a Sentence:</label>
+    <input type="text" id="sentence" />
+    <h4 id="result"></h4>
+    <button onclick="splitString()">Split</button>
+
+    <script>
+      function splitString() {
+        var inputString = document.getElementById("sentence").value;
+
+        var wordsArray = inputString.split(" ");
+
+        document.getElementById("result").innerHTML =
+          "Array of Splitted String : " + wordsArray;
+      }
+    </script>
+  </body>
+</html>

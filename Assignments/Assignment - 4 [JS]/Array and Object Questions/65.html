@@ -1,0 +1,25 @@
+<!-- copy to one string to another string in JS? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy String</title>
+</head>
+<body>
+    <label for="input">Enter a String : </label>
+    <input type="text" name="" id="inputString">
+    <h4 id="result"></h4>
+    <button onclick="copyString()">Copy</button>
+    <script>
+        function copyString()
+        {
+            var sentence = document.getElementById("inputString").value;
+
+            var newSentence = sentence;
+
+            document.getElementById("result").innerHTML = "Copied String : " + newSentence;
+        }
+    </script>
+</body>
+</html>

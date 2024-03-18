@@ -1,0 +1,21 @@
+<!-- Create password field with show hide functionalities -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="Password">Enter Password : </label>
+    <input type="password" value="pwd" id="input" /><br /><br />
+    <input type="checkbox" onclick="passwordVisibility()" />Show Password
+
+    <script>
+      function passwordVisibility() {
+        var x = document.getElementById("input");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

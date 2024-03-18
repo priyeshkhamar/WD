@@ -1,0 +1,36 @@
+Q - 60. Array vs object differences in JS?
+Ans.
+
+n JavaScript, arrays and objects are both commonly used data structures, but they serve different purposes and have distinct characteristics.
+Following are the key differences between arrays and objects in JavaScript:
+
+1. Purpose :
+Arrays: 
+- Store ordered collections of values.
+- Used for manipulating similar items like numbers or strings.
+
+Objects:
+- Store collections of key-value pairs.
+- Suitable for representing structured data and modeling real-world entities.
+
+2. Declaration :
+Arrays: 
+- Arrays are declared using square brackets ([]) and can contain any number of elements separated by commas.
+
+Objects: 
+- Objects are declared using curly braces ({}) and consist of key-value pairs separated by commas. The key is always a string, and the value can be of any data type.
+
+3. Accessing Elements:
+Arrays: 
+- Elements accessed by numerical index, using square brackets or array methods.
+
+Objects: 
+- Properties accessed by keys, using dot notation or square brackets notation.
+- Object methods like Object.keys(), Object.values(), and Object.entries() can be used.
+
+4. Order:
+
+Arrays: 
+- Arrays maintain the order of elements as they are inserted. The order of elements in an array is determined by their indices.
+Objects: 
+- Object properties are not ordered. The order in which properties are defined in an object may not be preserved, and properties may be enumerated in a different order in different JavaScript engines.

@@ -1,25 +1,37 @@
+<!-- Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy? -->
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Current Date</title>
+  </head>
+  <body>
+    <p id="formattedDate"></p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Time</title>
-</head>
-
-<body>
-    <p id="demo"></p>
     <script>
-
-        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      function getCurrentDateFormat(separator) {
         const today = new Date();
-        const dayOfWeek = daysOfWeek[today.getDay()];
-        const hours = today.getHours();
-        const min = today.getMinutes();
-        const sec = today.getSeconds();
 
-        document.getElementById("demo").innerHTML = "Today is " + dayOfWeek + " " + hours + ":" + min + ":" + sec;
+        const day = today.getDate();
+        const month = today.getMonth() + 1; // January is 0!
+        const year = today.getFullYear();
+
+        return (
+          (month < 10 ? "0" + month : month) +
+          separator +
+          (day < 10 ? "0" + day : day) +
+          separator +
+          year
+        );
+      }
+
+      const formattedDate1 = getCurrentDateFormat("/");
+      const formattedDate2 = getCurrentDateFormat("-");
+
+      document.getElementById("formattedDate").innerHTML =
+        "Date formats: " + formattedDate1 + ", " + formattedDate2;
     </script>
-</body>
-
+  </body>
 </html>

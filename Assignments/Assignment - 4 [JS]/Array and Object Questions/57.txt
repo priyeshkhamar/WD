@@ -1,0 +1,40 @@
+Q - 57. How many type of JS Event? How to use it?
+Ans.
+
+JavaScript events are actions that happen in the browser or document.
+There are various types of JavaScript events, categorized based on their sources or triggers. 
+Some common types of JavaScript events include:
+
+1. Mouse Events:
+
+ - click: Fired when a pointing device button (usually a mouse) is pressed and released on an element.
+ - dblclick: Fired when a pointing device button (usually a mouse) is clicked twice on an element.
+ - mouseover: Fired when a pointing device (usually a mouse) is moved over an element.
+ - mouseout: Fired when a pointing device (usually a mouse) is moved off an element.
+ - mousedown: Fired when a pointing device button (usually a mouse) is pressed on an element.
+ - mouseup: Fired when a pointing device button (usually a mouse) is released over an element.
+
+2. Keyboard Events:
+
+ - keydown: Fired when a key is pressed down.
+ - keyup: Fired when a key is released.
+ - keypress: Fired when a key is pressed down and then released.
+
+3. Form Events:
+
+ - submit: Fired when a form is submitted.
+ - reset: Fired when a form is reset.
+ - input: Fired when the value of an input element changes (for text fields, textarea, etc.).
+ - change: Fired when the value of a form element changes (for select elements, checkboxes, radio buttons, etc.).
+
+4. Window Events:
+
+load: Fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
+unload: Fired just before the page is unloaded (e.g., when the user navigates away or closes the browser window).
+resize: Fired when the browser window is resized.
+scroll: Fired when the user scrolls the document.
+
+5. Focus Events:
+
+ - focus: Fired when an element gains focus.
+ - blur: Fired when an element loses focus.

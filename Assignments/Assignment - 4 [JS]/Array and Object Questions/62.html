@@ -1,0 +1,29 @@
+<!-- Check if the string contains a word Script using includes() method? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Check</title>
+  </head>
+  <body>
+    <label for="input">Enter a Sentence : </label>
+    <input type="text" name="" id="inputString" />
+    <h4 id="result"></h4>
+    <button onclick="checkString()">Check</button>
+    <script>
+      function checkString() {
+        var sentence = document.getElementById("inputString").value;
+
+        if (sentence.includes("Script")) {
+          document.getElementById("result").innerHTML =
+            "The input string contains the word 'Script'!";
+        } else {
+          document.getElementById("result").innerHTML =
+            "The input string does not contain the word 'Script'!";
+        }
+      }
+    </script>
+  </body>
+</html>

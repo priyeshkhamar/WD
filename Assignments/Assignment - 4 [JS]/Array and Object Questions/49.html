@@ -1,0 +1,26 @@
+<!-- Change all the string characters to capital letters using toUpperCase() method? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To UpperCase</title>
+  </head>
+
+  <body>
+    <label for="string">Enter a String : </label>
+    <input type="text" name="" id="inputString" />
+    <p id="result"></p>
+    <button onclick="Capitalize()">Convert to Uppercase</button>
+    <script>
+      function Capitalize() {
+        var x = document.getElementById("inputString").value;
+        let y = x.toUpperCase();
+
+        document.getElementById("result").innerHTML =
+          "String after Capitalization : " + y;
+      }
+    </script>
+  </body>
+</html>
