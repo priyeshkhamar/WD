@@ -1,0 +1,120 @@
+<!-- Create result -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marksheet</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: #f0f0f0;
+      }
+      .container {
+        border: 1px solid #ccc;
+        width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2,
+      h5 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="number"] {
+        width: 100px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 8px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #result,
+      #result1,
+      #result2 {
+        margin-top: 20px;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="marksheet-box">
+        <h2>Marksheet for Information Technology</h2>
+        <h5>Enter Marks [Marks < 50]</h5>
+        <label for="clang">1. C Language:</label>
+        <input type="number" id="clang" />
+        <br />
+        <label for="cpplang">2. C++ Language:</label>
+        <input type="number" id="cpplang" />
+        <br />
+        <label for="database">3. Database:</label>
+        <input type="number" id="database" />
+        <br />
+        <label for="html">4. HTML:</label>
+        <input type="number" id="html" />
+        <br />
+        <label for="css">5. CSS:</label>
+        <input type="number" id="css" />
+        <br />
+        <label for="php">6. PHP:</label>
+        <input type="number" id="php" />
+        <br />
+        <label for="corejava">7. Core Java:</label>
+        <input type="number" id="corejava" />
+        <br />
+        <button onclick="calculateResult()">Result</button>
+        <br />
+        <span id="result"></span>
+        <span id="result1"></span>
+        <span id="result2"></span>
+      </div>
+    </div>
+
+    <script>
+      function calculateResult() {
+        var n1 = parseInt(document.getElementById("clang").value);
+        var n2 = parseInt(document.getElementById("cpplang").value);
+        var n3 = parseInt(document.getElementById("database").value);
+        var n4 = parseInt(document.getElementById("html").value);
+        var n5 = parseInt(document.getElementById("css").value);
+        var n6 = parseInt(document.getElementById("php").value);
+        var n7 = parseInt(document.getElementById("corejava").value);
+
+        var total = n1 + n2 + n3 + n4 + n5 + n6 + n7;
+        var avg = total / 7;
+        var percent = (total / 350) * 100;
+
+        document.getElementById("result").innerHTML = "Total: " + total;
+        document.getElementById("result1").innerHTML =
+          "Average: " + avg.toFixed(2);
+        document.getElementById("result2").innerHTML =
+          "Percentage: " + percent.toFixed(2) + "%";
+      }
+    </script>
+  </body>
+</html>
