@@ -1,1 +1,123 @@
 <!-- Slider -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <style>
+      .container {
+        width: 1000px;
+        height: 500px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-color: black;
+      }
+
+      .slider-box {
+        text-align: center;
+      }
+
+      .slider-box h2 {
+        color: white;
+        font-size: larger;
+      }
+
+      .slider-box h6 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: large;
+      }
+
+      .box-div {
+        display: flex;
+        padding: 15px;
+      }
+
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5 {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+      }
+
+      .box1 {
+        background-color: yellow;
+      }
+
+      .box2 {
+        background-color: red;
+      }
+
+      .box3 {
+        background-color: violet;
+      }
+
+      .box4 {
+        background-color: green;
+      }
+
+      .box5 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider-box">
+        <h2>Simple JavaScript Slider</h2>
+        <h6>Created by Dropinks</h6>
+        <div class="box-div center">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+          <div class="box4"></div>
+          <div class="box5"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(".center").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
