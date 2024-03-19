@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding and Removing Classes using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .highlight {
+        background-color: blue;
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1">This is jQuery.</p>
+    <button id="btn1">Add</button>
+    <button id="btn2">Remove</button>
+
+    <script>
+      $(document).ready(function () {
+        // Add class using jQuery
+        $("#btn1").click(function () {
+          $("#p1").addClass("highlight");
+        });
+
+        // Remove class using jQuery after a delay
+        $("#btn2").click(function () {
+          $("#p1").removeClass("highlight");
+        });
+      });
+    </script>
+  </body>
+</html>

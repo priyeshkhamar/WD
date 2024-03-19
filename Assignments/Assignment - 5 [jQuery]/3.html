@@ -1,0 +1,56 @@
+<!-- Slider using Animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Slider</title>
+    <style>
+      .slider-container {
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slider {
+        width: 1200px; /* Total width of all slides */
+        position: absolute;
+        left: 0;
+      }
+
+      .slider img {
+        float: left;
+        width: 400px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="img1.jpg" alt="Image 1" />
+        <img src="img2.jpg" alt="Image 2" />
+        <img src="img3.jpg" alt="Image 3" />
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var slider = $(".slider");
+        var slideWidth = $(".slider-container").width(); //gets the width of the container element that holds the slider. It's used to determine the width of each slide in the slider.
+        var currentSlide = 0;
+        var totalSlides = slider.children().length; //gets the number of slides
+
+        function slideNext() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          slider.animate({ left: -currentSlide * slideWidth }, 2000); //responsible for moving to the next slide. It increments the currentSlide variable by 1, then, it uses jQuery's animate() function to smoothly animate the left position of the slider to reveal the next slide.
+        }
+
+        setInterval(slideNext, 3000);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        width: 100px;
+        height: 100px;
+        background-color: darkorchid;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <br>
+    <button id="btn">Animate</button>
+
+    <script>
+      $(document).ready(function () {
+        // jQuery Animation
+        $("#btn").click(function () {
+          $("#div1").animate(
+            {
+              left: "250px",
+              opacity: "0.5",
+              height: "150px",
+              width: "250px",
+            },
+            "slow"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

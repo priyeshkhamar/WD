@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Applying CSS using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p id="p1">This is jQuery.</p>
+    <button id="btn">Change</button>
+
+    <script>
+      $(document).ready(function () {
+        // Apply CSS using jQuery
+        $("#btn").click(function () {
+          $("#p1").css("color", "red");
+        });
+      });
+    </script>
+  </body>
+</html>
