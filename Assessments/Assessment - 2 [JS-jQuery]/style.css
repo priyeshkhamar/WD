@@ -12,12 +12,10 @@
   margin: 5px 0;
 }
 
-/* Common styles for checkboxes */
 .form-group input[type="checkbox"] {
   margin: 5px 0;
 }
 
-/* Submit button styles */
 button {
   background-color: #4caf50;
   color: white;
@@ -31,7 +29,6 @@ button {
   background-color: #45a049;
 }
 
-/* Individual styles for specific elements */
 #firstname {
   margin-left: 25px;
 }
