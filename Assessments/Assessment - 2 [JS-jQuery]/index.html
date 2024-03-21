@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Student Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
+
+<body>
+    <div class="heading">
+        <h1><u>Student Registration Form</u></h1>
+    </div>
+    <div class="regform">
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="firstname"><b>First Name :</b></label>
+                <input type="text" id="firstname" name="first" placeholder="Enter your First Name" />
+                <br />
+                <label for="lastname"><b>Last Name :</b></label>
+                <input type="text" id="lastname" name="last" placeholder="Enter your Last Name" />
+                <br />
+                <label for="email"><b>Email :</b></label>
+                <input type="email" name="email" id="email" placeholder="It should contain @" />
+                <br />
+                <label for="mobile"><b>Mobile :</b></label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Only 10 digits are allowed" />
+                <br />
+                <label for="gender"><b>Gender:</b></label>
+                <input type="radio" name="gender" id="gender" value="Male" />Male
+                <input type="radio" name="gender" id="gender" value="Female" />Female
+                <br />
+                <label for="dob"><b>Date of Birth :</b></label>
+                <input type="date" name="dob" id="dob" />
+                <br />
+                <div class="address">
+                    <label for="address"><b>Address :</b></label>
+                    <textarea name="address" id="address1" cols="100" rows="10"></textarea>
+                </div>
+                <br />
+                <label for="city"><b>City :</b></label>
+                <input type="text" name="city" id="city" />
+                <br />
+                <label for="pincode"><b>Area PIN :</b></label>
+                <input type="number" name="pincode" id="pincode" />
+                <br />
+                <label for="state"><b>State :</b></label>
+                <input type="text" name="state" id="state" />
+                <br />
+                <label for="qualification"><b>Qualifications :</b></label>
+                <select name="qualification" id="qualification">
+                    <option value="" selected disabled>
+                        <b>Select Qualification</b>
+                    </option>
+                    <option value="Under Graduate">Under Graduate</option>
+                    <option value="Graduate">Graduate</option>
+                    <option value="Post Graduate">Post Graduate</option>
+                    <option value="PHD">PHD</option>
+                </select>
+
+                <br />
+                <label for="specialization"><b>Specialization :</b></label>
+                <br>
+                <input type="checkbox" name="specialization" id="specialization" />Computer Science
+                <br />
+                <input type="checkbox" name="specialization" id="specialization" />Information Technology
+                <br />
+                <input type="checkbox" name="specialization" id="specialization" />Computer Architecture
+                <br />
+                <input type="checkbox" name="specialization" id="specialization" />Telecommunication
+                <br />
+                <label for="password"><b>Password :</b></label>
+                <input type="password" name="password" id="password" />
+                <br />
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
