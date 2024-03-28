@@ -1,0 +1,9 @@
+Q - 3. What are the default Bootstrap text settings?
+Ans.
+Bootstrap's default text settings include:
+
+Font Family: Sans-serif.
+Font Size: Typically 16 pixels.
+Line Height: Approximately 1.5 times the font size.
+Font Weight: Balanced weights for hierarchy.
+Font Color: Consistent colors for readability and accessibility.

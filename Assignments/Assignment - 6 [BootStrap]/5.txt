@@ -1,0 +1,11 @@
+Q - 5. What is the difference between Bootstrap 4 and Bootstrap 5?
+Ans.
+
+Below are the differences between Bootstrap 4 and Bootstrap 5:
+
+1. jQuery Dependency: Bootstrap 4 relies on jQuery, while Bootstrap 5 removes this dependency.
+2. Utility Classes: Bootstrap 5 offers more utility classes for easier customization.
+3. Customization: Bootstrap 5 has a more modular architecture for simpler customization.
+4. Grid System: Bootstrap 5 enhances the grid system with new features.
+5. Form Control Styling: Bootstrap 5 introduces updated form control styles.
+6. Documentation and Community: Bootstrap 5 comes with improved documentation and community support.

@@ -1,0 +1,13 @@
+Q - 1. What are the advantages of Bootstrap?
+Ans.
+
+Following are the advantages of Bootstrap :
+
+1. Responsive Design: Easily create websites that are responsive.
+2. Consistency: Ensures a uniform look and feel across the site.
+3. Customizable: We can customize styles according to project needs.
+4. Cross-browser Compatibility: Works well across different browsers.
+5. Time-saving: Speeds up development with pre-made components.
+6. Integration: Seamless integration with JavaScript libraries.
+7. Accessibility: Built-in features for improved accessibility.
+8. Scalability: Suits projects of all sizes, from simple to complex.
