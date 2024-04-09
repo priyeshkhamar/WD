@@ -13,13 +13,13 @@ $(document).ready(function () {
     var diff = toDate.diff(fromDate);
 
     $("#results").html(`
-          <p>Date interval between ${fromDate.format(
-            "DD/MM/YYYY"
-          )} and ${toDate.format("DD/MM/YYYY")}</p>
-          <p>In years: ${toDate.diff(fromDate, "years")}</p>
-          <p>In months: ${toDate.diff(fromDate, "months")}</p>
-          <p>In weeks: ${toDate.diff(fromDate, "weeks")}</p>
-          <p>In days: ${toDate.diff(fromDate, "days")}</p>
-      `);
+      <p>Date interval between ${fromDate.format(
+        "DD/MM/YYYY"
+      )} and ${toDate.format("DD/MM/YYYY")}</p>
+      <p>In years: ${toDate.diff(fromDate, "years")}</p>
+      <p>In months: ${toDate.diff(fromDate, "months")}</p>
+      <p>In weeks: ${toDate.diff(fromDate, "weeks")}</p>
+      <p>In days: ${toDate.diff(fromDate, "days")}</p>
+    `);
   });
 });
