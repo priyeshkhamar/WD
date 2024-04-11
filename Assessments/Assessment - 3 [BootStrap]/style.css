@@ -1,9 +1,9 @@
 .date-calculator {
-  margin-top: 20px auto 20px auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 50%;
+  width: 400px;
 }
 
 #results {
@@ -12,21 +12,24 @@
   width: 70%;
 }
 
-button{
-  margin-bottom: 20px;
+button {
+  margin: 5px 0;
 }
 
-input{
-  margin: 10px ;
-
+input {
+  margin: 10px auto;
 }
 
-label{
-  font-weight: bold;
-  display: inline;
+label {
+  font-weight: 700;
 }
 
-.form-group{
-  display: flex;
-  align-items: center;
+td {
+  width: 100px;
+}
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
